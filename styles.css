@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  height: 100vh;
+  background-color: hsl(275, 100%, 97%);
+}
+
+.windons {
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+}
+
+.container {
+  position: relative;
+  top: 6rem;
+  left: 29rem;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 40px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+.container .content-title {
+  display: flex;
+  align-items: center;
+  margin: 5px 0px 15px;
+}
+.container .content-title .title {
+  font-size: 2.5rem;
+  margin-left: 20px;
+  color: hsl(292, 42%, 14%);
+}
+.container .questions {
+  margin: 20px 0;
+}
+.container .questions .quest-content {
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(292, 42%, 14%);
+  cursor: pointer;
+}
+.container .questions .quest-content .Pregunta:hover {
+  color: hsl(292, 16%, 49%);
+}
+.container .questions .quest-content .bx {
+  width: 25px;
+}
+.container .questions .quest-content .none.close {
+  display: none;
+}
+.container .questions .quest-content .none.open {
+  display: none;
+}
+.container .questions .respuesta {
+  color: #aaaaaa;
+  margin-top: 15px;
+  color: hsl(292, 16%, 49%);
+}
+.container .questions .none.respuesta {
+  display: none;
+}
+.container hr {
+  width: 31rem;
+  opacity: 0.1;
+}/*# sourceMappingURL=styles.css.map */

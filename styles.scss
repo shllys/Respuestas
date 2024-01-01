@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    height: 100vh;
+    background-color: hsl(275, 100%, 97%);
+}
+
+$color-pink: hsl(275, 100%, 97%);
+$color-purple: hsl(292, 16%, 49%);
+$Dark-purple: hsl(292, 42%, 14%);
+
+.windons {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+
+.container {
+    position: relative;
+    top: 6rem;
+    left: 29rem;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 40px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+
+    .content-title {
+        display: flex;
+        align-items: center;
+        margin: 5px 0px 15px;
+
+        .title {
+            font-size: 2.5rem;
+            margin-left: 20px;
+            color: $Dark-purple;
+        }
+    }
+
+    .questions {
+        margin: 20px 0;
+
+        .quest-content {
+            font-size: 17px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $Dark-purple;
+            cursor: pointer;
+
+            .Pregunta {
+                &:hover {
+                    color: $color-purple;
+                }
+            }
+
+            .bx {
+                width: 25px;
+            }
+            .none.close {
+                display: none;
+            }
+            .none.open {
+                display: none;
+            }
+        }
+        .respuesta{
+            color: #aaaaaa;
+            margin-top: 15px;
+            color: $color-purple;
+        }
+        .none.respuesta {
+            display: none;
+        }
+    }
+    
+
+    hr {
+        width: 31rem;
+        opacity: .1;
+    }
+}
